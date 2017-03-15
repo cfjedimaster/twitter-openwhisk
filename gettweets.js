@@ -64,13 +64,10 @@ function main(args) {
 			let search = createSearchString(args);
 			client.get('search/tweets', {q:search}, function(err, tweets, response) {
 				if(err) return reject(err);
-				resolve(tweets.statuses);
+				resolve({tweets:tweets.statuses});
 			});
 			
 		});
-
-
-
 
 
 	});
