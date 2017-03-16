@@ -48,8 +48,6 @@ function createSearchString(args) {
 }
 
 function main(args) {
-
-	console.log('getTweet args', args);
 	
 	return new Promise( (resolve, reject) => {
 
