@@ -9,7 +9,7 @@ function getBearerToken(key,secret) {
 	
 	return new Promise( (resolve, reject) => {
 
-		if(BEARER_TOKEN != '') return resolve(BEARER_TOKEN);
+		//if(BEARER_TOKEN != '') return resolve(BEARER_TOKEN);
 		console.log('getting BT from Twitter');
 
 		let enc_secret = new Buffer(key + ':' + secret).toString('base64');

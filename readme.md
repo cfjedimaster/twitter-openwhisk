@@ -5,7 +5,7 @@ This is the beginning of (hopefully) a package of actions related to working wit
 
 You must pass args for:
 * consumer_key
-* cosumer_secret
+* consumer_secret
 
 **Actions**
 
