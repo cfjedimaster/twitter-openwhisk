@@ -36,6 +36,7 @@ main purpose is to generate a search string
 form of search:
 args.account (to get by account)
 args.term (raw term)
+args.since (date to filter)
 
 more to come maybe
 */
@@ -44,6 +45,7 @@ function createSearchString(args) {
 	let result = '';
 	if(args.term) result += ' '+args.term;
 	if(args.account) result += ' from:' + args.account;
+	if(args.since) result += ' since:' + args.since;
 	return result;
 }
 
