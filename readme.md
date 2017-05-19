@@ -28,7 +28,7 @@ sendTweet - sends a tweet. This one requires the access_token values. Args suppo
 
 ### License
 
-Copyright 2015-2016 IBM Corporation
+Copyright 2017 Raymond Camden
 
 Licensed under the [Apache License, Version 2.0 (the "License")](http://www.apache.org/licenses/LICENSE-2.0.html).
 
