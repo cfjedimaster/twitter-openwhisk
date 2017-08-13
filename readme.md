@@ -25,6 +25,7 @@ getTweets - returns an array of tweets matching search terms. Args supported:
 sendTweet - sends a tweet. This one requires the access_token values. Args supported:
 
 * status - text of the new tweet
+* image - optional - url of an image to attach
 
 ### License
 
