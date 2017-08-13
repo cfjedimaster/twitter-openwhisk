@@ -27,14 +27,11 @@ function main(args) {
 		Special branching for images. Since images require a two step process, we split
 		up the code into two paths.
 		*/
-		console.log('doing send tweet', args);
 
 		if(!args.image) {
-			console.log('doing easy branch');
 			client.post('statuses/update', {status:args.status}, function(err, tweet, response) {
-				if(err) return reject(err);
-				console.log('aobut to resolve');
-				resolve({response:response});
+				if(err) reject(err);
+				resolve({result:tweet});
 			});
 		} else {
 
@@ -54,7 +51,7 @@ function main(args) {
 
 						client.post('statuses/update', status, function(error, tweet, response){
 							if (!error) {
-								resolve({response:response});
+								resolve({result:tweet});
 							}
 						});
 
